@@ -1,7 +1,3 @@
-//MODULS
-//UI MODUL & DATA MODUL
-//CONTROLLER MODULE
-
 //budget controller
 var budgetController = (function()
 {
@@ -74,7 +70,7 @@ var budgetController = (function()
             }
             //push it into data structure
             dataStore.allItems[type].push(newItem);
-            //return the new element
+            //return new element
             return newItem;
         },
 
@@ -343,7 +339,6 @@ var controller = (function(budgetC,UIC)
 
         //3. Update UI
         UIC.displayPercentages(percentages);
-        console.log('FOOO');
     }
 
     var cntrlAddItem = function()
